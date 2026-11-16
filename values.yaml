@@ -1,0 +1,13 @@
+architecture: standalone
+
+auth:
+  rootPassword: mysql123
+  database: my_database
+  username: appuser
+  password: apppass123
+
+primary:
+  persistence:
+    enabled: true
+    storageClass: nfs-client
+    size: 8Gi
